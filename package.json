@@ -1,0 +1,14 @@
+{
+  "name": "favolinks-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Joris Sparla <joris.sparla@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.14.12",
+    "prisma-binding": "^2.1.0"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}

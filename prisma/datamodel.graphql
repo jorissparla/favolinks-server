@@ -1,0 +1,21 @@
+type User {
+  id: ID! @unique
+  name: String!
+  email: String!
+  password: String! @default(value: "")
+  role: String! @default(value: "guest")
+  favorites: [Favorite!]!
+}
+
+type Favorite {
+  id: ID! @unique
+  description: String!
+  link: String!
+  user: User
+  keywords: [Keyword!]!
+}
+
+type Keyword {
+  id: ID! @unique
+  word: String!
+}

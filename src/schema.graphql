@@ -1,0 +1,12 @@
+#import Favorite from './generated/prisma.graphql';
+# import User from './generated/prisma.graphql'
+type Query {
+  favorites(searchString: String): [Favorite!]!
+  user(id: ID!): User
+}
+
+type Mutation {
+  createFavorite(userId: ID!, description: String!, link: String!): Favorite
+  updateFavorite(id: ID!, description: String, link: String): Favorite
+  signup(name: String!, email: String!): User!
+}
